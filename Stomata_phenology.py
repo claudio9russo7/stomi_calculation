@@ -10,8 +10,8 @@ def stomata_statistics(directory_raw_txt, directory_save_excel, x_dimension, y_d
     directory = directory_raw_txt
     final_directory = directory_save_excel
     data_file = {}
-    for file in glob.glob(fr"{directory}\*.txt"):
-        filename = pathlib.Path(fr"{directory}\{file}").stem
+    for file in glob.glob(fr"{directory}/*.txt"):
+        filename = pathlib.Path(fr"{directory}/{file}").stem
         new_file = open(file, "r")
         x_width = x_dimension
         y_width = y_dimension
