@@ -1,7 +1,6 @@
 import pandas as pd
 import glob as glob
 import pathlib
-#directory = r"C:\Users\Claudio\PycharmProjects\ProgettiCoding\Area and number Calculator\Raw_Data"
 #4608
 #3456
 #0.270
@@ -53,12 +52,3 @@ def stomata_phenology(directory_raw_txt, directory_save_excel, x_dimension, y_di
     df.rename(columns={0: "number stomata for mm2", 1: "Total area (micron/mm2)", 2: "average area (micron)"}, inplace=True)
     name_file = input("How do you want to name the file?")
     df.to_excel(fr"{final_directory}\{name_file}.xlsx")
-
-
-
-
-stomata_calculation(directory_raw_txt=r"C:\Users\Claudio\PycharmProjects\ProgettiCoding\Area and number Calculator\Raw_Data",
-                    directory_save_excel=r"C:\Users\Claudio\PycharmProjects\ProgettiCoding\Area and number Calculator",
-                    x_dimension=4608,
-                    y_dimension=3456,
-                    total_picture_area=0.270)
