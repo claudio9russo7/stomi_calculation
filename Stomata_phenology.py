@@ -42,7 +42,7 @@ def stomata_statistics(directory_raw_txt, directory_save_excel, x_dimension, y_d
             total_area += real_area
         area_micron = round(total_area, 6) * 1000000
         mean_stomata_area_micron = round(total_area/number_of_stomata, 6) * 1000000
-        number_stomata_for_mm2 = int(number_of_stomata / total_picture_area_mm2)
+        number_stomata_for_mm2 = number_of_stomata / total_picture_area_mm2
         total_area_for_mm2 = area_micron / total_picture_area_mm2
         data.append(number_stomata_for_mm2)
         data.append(total_area_for_mm2)
