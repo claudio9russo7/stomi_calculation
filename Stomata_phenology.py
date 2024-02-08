@@ -6,7 +6,7 @@ import pathlib
 #0.270
 
 
-def stomata_phenology(directory_raw_txt, directory_save_excel, x_dimension, y_dimension, total_picture_area):
+def stomata_statistics(directory_raw_txt, directory_save_excel, x_dimension, y_dimension, total_picture_area):
     directory = directory_raw_txt
     final_directory = directory_save_excel
     data_file = {}
