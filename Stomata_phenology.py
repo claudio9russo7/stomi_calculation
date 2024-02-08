@@ -50,5 +50,5 @@ def stomata_statistics(directory_raw_txt, directory_save_excel, x_dimension, y_d
         data_file[filename] = data
     df = pd.DataFrame.from_dict(data_file, orient="index")
     df.rename(columns={0: "number stomata for mm2", 1: "Total area (micron/mm2)", 2: "average area (micron)"}, inplace=True)
-    name_file = input("How do you want to name the file?")
+    name_file = input("How do you want to name the file? ")
     df.to_excel(fr"{final_directory}/{name_file}.xlsx")
